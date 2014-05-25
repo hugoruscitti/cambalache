@@ -1,0 +1,10 @@
+.titulo {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sidebar {
+  background: #384042;
+  color: #677679;
+  position: relative;
+}
