@@ -28,9 +28,9 @@
   text-align: center;
   color: white;
   height: 60px;
-  line-height: 60px;
-  padding: 0;
+  line-height: 38px;
   border-bottom: 1px solid #1985ac;
+  border-right: 1px solid #20a8d8;
 }
 
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
@@ -52,19 +52,26 @@
 }
 
 .nav > li > a {
-  padding-left: 30px !important;
+  padding-left: 20px !important;
 }
 
 .navbar {
   position: relative;
   min-height: 50px;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 100;
 }
 
 
 div.selector {
   display: inline-block;
-  width: 200px;
+  width: 150px;
   height: 17px;
+
 }
 
 
@@ -85,4 +92,8 @@ div.selector_activo {
 
 .barra-menu {
   padding: 0 !important;
+}
+
+.cuerpo {
+  margin-top: 60px;
 }

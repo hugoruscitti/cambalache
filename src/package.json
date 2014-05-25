@@ -1,0 +1,10 @@
+{
+  "name": "cambalache",
+  "main": "index.html",
+  "window": {
+    "width": 1050,
+    "height": 500,
+    "min_width": 1050,
+    "min_height": 500
+  }
+}
