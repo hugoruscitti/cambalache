@@ -6,5 +6,83 @@
 .sidebar {
   background: #384042;
   color: #677679;
+}
+
+.sidebar ul.nav.nav-sidebar li a.active, .sidebar ul.nav.nav-sidebar li a:hover {
+  background: #2c3334;
+  color: white;
+}
+
+.sidebar ul.nav.nav-sidebar li a {
+  color: #677679;
+}
+
+.navbar .navbar-brand img {
+  margin: -5px 10px 0 0;
+  height: 30px;
+  opacity: .5;
+}
+
+.navbar .navbar-brand {
+  background: #20a8d8;
+  text-align: center;
+  color: white;
+  height: 60px;
+  line-height: 60px;
+  padding: 0;
+  border-bottom: 1px solid #1985ac;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+  margin-left: -15px;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  border: none;
+  border-bottom: 1px solid #e1e6ef;
+  background: white;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  color: #384042;
+  line-height: 60px;
+}
+
+.nav > li > a {
+  padding-left: 30px !important;
+}
+
+.navbar {
   position: relative;
+  min-height: 50px;
+}
+
+
+div.selector {
+  display: inline-block;
+  width: 200px;
+  height: 17px;
+}
+
+
+div.selector_activo {
+  background-image: url(selectoractivo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.captura_seleccionada {
+  box-shadow: rgba(0, 0, 255, 0.93) 0px 0px 5px;
+  border: 2px solid white;
+}
+
+.captura {
+  border: 2px solid white;
+}
+
+.barra-menu {
+  padding: 0 !important;
 }

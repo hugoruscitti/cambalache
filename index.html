@@ -17,13 +17,41 @@
 
   <body>
 
-  <div ng-controller='MainCtrl' class='container'>
+  <div ng-controller='MainCtrl' class='container-fluid content'>
 
-    <div class='row'>
-      <div class='col-sm-12'>
-        <button class='btn btn-info btn-sm'>Regresar</button>
+    <div class="navbar" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html#"><img src="imagenes/logo.png"> cambalache</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-actions navbar-left">
+          <li><a href="index.html#" id="main-menu-toggle"><i class="fa fa-bars"></i></a></li>
+        </ul>
+
+        <form class="navbar-form navbar-left">
+          <i class="fa fa-search"></i>
+          <input type="text" class="form-control" placeholder="Buscar ...">
+        </form>
       </div>
     </div>
+
+
+    <div class='row'>
+      <div class="sidebar col-md-2 col-sm-2 barra-menu">
+					<ul class="nav nav-sidebar">
+						<li><a href="#" class="active"><i class="glyphicon glyphicon-globe"></i><span class="text"> Programas</span></a></li>
+						<li><a href="#"><i class="glyphicon glyphicon-download"></i><span class="text"> Descargas</span></a></li>
+						<li><a href="#"><i class="glyphicon glyphicon-cog"></i><span class="text"> Fuentes</span></a></li>
+						<li><a href="#"><i class="glyphicon glyphicon-refresh"></i><span class="text"> Actualizaciones</span></a></li>
+					</ul>
+			</div>
+
+      <div class='col-md-10 col-sm-10'>
+        <div class='row'>
+          <button class='btn btn-info btn-sm'>Regresar</button>
+        </div>
+
 
     <div class='row'>
       <div class='col-sm-2'>
@@ -39,25 +67,58 @@
     </div>
 
     <div class='row'>
-      <div class='col-sm-7'>
-        <img width='100%' src='programas/thomas/captura1.png'>
+      <div class='col-sm-8 col-md-8'>
+        <a href='' ng-click='mostrar_siguiente_captura()'><img width='100%' ng-src='programas/thomas/captura{{data.programa.captura}}.png'></a>
       </div>
 
-      <div class='col-sm-5'>
+      <div class='col-sm-4 col-md-4'>
         {{data.programa.descripcion}}
+      </div>
+
+    </div>
+
+    <div class='row'>
+      <div class='col-sm-8 col-md-8'>
+        <div ng-class='{selector_activo: esta_activa_la_captura(1)}' class='selector'></div>
+        <div ng-class='{selector_activo: esta_activa_la_captura(2)}' class='selector'></div>
+        <div ng-class='{selector_activo: esta_activa_la_captura(3)}' class='selector'></div>
+      </div>
+
+      <div class='col-sm-4 col-md-4'>
       </div>
     </div>
 
     <div class='row'>
-      <div class='col-sm-7'>
-        <img src='programas/thomas/mini-captura1.png'>
-        <img src='programas/thomas/mini-captura2.png'>
-        <img src='programas/thomas/mini-captura3.png'>
+      <div class='col-sm-8 col-md-8'>
+        <a href=''><img ng-click="seleccionar_captura(1)" ng-class='{captura_seleccionada: esta_activa_la_captura(1)}' class='captura' src='programas/thomas/mini-captura1.png'></a>
+        <a href=''><img ng-click="seleccionar_captura(2)" ng-class='{captura_seleccionada: esta_activa_la_captura(2)}' class='captura' src='programas/thomas/mini-captura2.png'></a>
+        <a href=''><img ng-click="seleccionar_captura(3)" ng-class='{captura_seleccionada: esta_activa_la_captura(3)}' class='captura' src='programas/thomas/mini-captura3.png'></a>
       </div>
 
-      <div class='col-sm-5'>
+      <div class='col-sm-4 col-md-4'>
       </div>
     </div>
+
+
+    <div class='row'>
+      <div class='col-sm-12 col-md-12'>
+        <h3>Comentarios</h3>
+
+        <p class='gray'>No hay comentarios aún...
+      </div>
+    </div>
+
+    <div class='row'>
+      &nbsp;
+    </div>
+
+      </div>
+    </div>
+
+
+
+
+
 
   </div>
 
